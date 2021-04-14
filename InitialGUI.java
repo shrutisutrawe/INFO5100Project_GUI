@@ -1,5 +1,3 @@
-package GUI_SelfPractice;
-
 import javax.swing.*;
 import java.awt.*;
 
