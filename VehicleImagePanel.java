@@ -28,10 +28,10 @@ public class VehicleImagePanel {
 
     public JPanel imagePanel() {
         JPanel panel = new JPanel();
-        panel.setLayout(new FlowLayout(FlowLayout.LEFT));
+        panel.setLayout(new FlowLayout(FlowLayout.LEFT, 0, 0));
         imageLabel.setIcon(getImageByIndex(index));
 //        imageLabel.setBorder(new EmptyBorder(10, 10, 20, 10));
-//        panel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        panel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         if (decButton != null)
             panel.add(decButton);
         panel.add(imageLabel);
@@ -53,9 +53,9 @@ public class VehicleImagePanel {
         decButton.setText("<");
         decButton.setBorder(new LineBorder(new Color(255,255,255)));
 
-        decButton.setPreferredSize(new Dimension(20,500));
-        decButton.setMinimumSize(new Dimension(20,500));
-        decButton.setMaximumSize(new Dimension(20,500));
+        decButton.setPreferredSize(new Dimension(30,500));
+        decButton.setMinimumSize(new Dimension(30,500));
+        decButton.setMaximumSize(new Dimension(30,500));
 
         decButton.addActionListener(new ActionListener() {
             @Override
@@ -77,9 +77,9 @@ public class VehicleImagePanel {
         incButton.setText(">");
         incButton.setBorder(new LineBorder(new Color(255,255,255)));
 
-        incButton.setPreferredSize(new Dimension(20,500));
-        incButton.setMinimumSize(new Dimension(20,500));
-        incButton.setMaximumSize(new Dimension(20,500));
+        incButton.setPreferredSize(new Dimension(25,500));
+        incButton.setMinimumSize(new Dimension(25,500));
+        incButton.setMaximumSize(new Dimension(25,500));
 
         incButton.addActionListener(new ActionListener() {
             @Override

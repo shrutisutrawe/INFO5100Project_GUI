@@ -1,6 +1,8 @@
 package GUI_SelfPractice;
 
 import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.EtchedBorder;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.plaf.FontUIResource;
@@ -11,9 +13,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class ViewVehicleDetails {
-    private JFrame frame = new JFrame();
     private List<String> vehicleImageList;
-    private JPanel outerPanel;
     private JPanel innerPanel;
     private JPanel vehicleShortDescriptionPanel;
     private JPanel vehicleDetailsPanel;
@@ -21,6 +21,7 @@ public class ViewVehicleDetails {
     private JPanel vehicleInfoPanel;
     private JScrollPane vehicleDescriptionPane;
     private JPanel vehicleDescriptionPanel;
+    private JScrollPane dealersInformationPane;
     private JPanel dealersInformationPanel;
     private JLabel vehicleMSRPLabel;
     private JPanel vehicleImagePanel;
@@ -90,6 +91,7 @@ public class ViewVehicleDetails {
     private JPanel vehicleMileageLabelPanel;
     private JPanel vehicleSeatCountLabelPanel;
     private JPanel vehicleRatingsLabelPanel;
+    private JFrame frame;
 
 
     public ViewVehicleDetails(Car myCar) {
@@ -108,30 +110,38 @@ public class ViewVehicleDetails {
     }
 
     public void createOuterPanel() {
-        JFrame frame = new JFrame();
+        frame = new JFrame();
 
         scrollPane = new JScrollPane();
         scrollPane.setBackground(new Color(-4473925));
-        scrollPane.setMaximumSize(new Dimension(916, 1150));
-        scrollPane.setMinimumSize(new Dimension(916, 1150));
-        scrollPane.setPreferredSize(new Dimension(916, 1150));
+        scrollPane.setMaximumSize(new Dimension(916, 940));
+        scrollPane.setMinimumSize(new Dimension(916, 940));
+        scrollPane.setPreferredSize(new Dimension(916, 940));
 //        scrollPane.setBorder(new LineBorder(new Color(255,0,0)));
 
         innerPanel = new JPanel();
         innerPanel.setLayout(new BoxLayout(innerPanel,BoxLayout.Y_AXIS));
-        innerPanel.setPreferredSize(new Dimension(916, 950));
-        innerPanel.setMaximumSize(new Dimension(916, 950));
-        innerPanel.setMinimumSize(new Dimension(916, 950));
-//        innerPanel.setBorder(new LineBorder(new Color(0,0,0)));
+        innerPanel.setPreferredSize(new Dimension(916, 940));
+        innerPanel.setMaximumSize(new Dimension(916, 940));
+        innerPanel.setMinimumSize(new Dimension(916, 940));
+//        innerPanel.setBorder(new LineBorder(new Color(0,255,0)
+//        ));
         scrollPane.setViewportView(innerPanel);
 
         innerPanel.add(vehicleShortDescriptionPanel, 0);
         innerPanel.add(vehicleDetailsPanel, 1);
         innerPanel.add(vehicleDescriptionPanel, 2);
         innerPanel.add(dealersInformationPanel, 3);
+        JPanel additionalBlankPanel = new JPanel();
+        additionalBlankPanel.setBorder(new LineBorder(Color.BLACK));
+        additionalBlankPanel.add(Box.createRigidArea(new Dimension(916, 1)));
+        additionalBlankPanel.setPreferredSize(new Dimension(916, 1));
+        additionalBlankPanel.setMaximumSize(new Dimension(916, 1));
+        additionalBlankPanel.setMinimumSize(new Dimension(916, 1));
+        innerPanel.add(additionalBlankPanel);
 
-
-        frame.setSize(new Dimension(916, 1150));
+        frame.pack();
+        frame.setSize(new Dimension(950, 950));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.setContentPane(scrollPane);
@@ -146,7 +156,7 @@ public class ViewVehicleDetails {
         vehicleShortDescriptionPanel.setMaximumSize(new Dimension(916, 74));
         vehicleShortDescriptionPanel.setMinimumSize(new Dimension(916, 74));
         vehicleShortDescriptionPanel.setLayout(new BoxLayout(vehicleShortDescriptionPanel, BoxLayout.X_AXIS));
-        vehicleShortDescriptionPanel.setBorder(new LineBorder(new Color(0,0,0)));
+        vehicleShortDescriptionPanel.setBorder(new LineBorder(Color.BLACK));
 
         vehicleNameLabel.setText(myCar.getName());
         vehicleNameLabel.setFont(new Font("Calibri", Font.BOLD, 36));
@@ -171,7 +181,7 @@ public class ViewVehicleDetails {
         vehicleDetailsPanel.setPreferredSize(new Dimension(916, 600));
         vehicleDetailsPanel.setMaximumSize(new Dimension(916, 600));
         vehicleDetailsPanel.setMinimumSize(new Dimension(916, 600));
-        vehicleDetailsPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
+//        vehicleDetailsPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
 
         createVehicleImageAndLeadFormPanel();
         createVehicleInfoDetailsPanel(myCar);
@@ -185,6 +195,7 @@ public class ViewVehicleDetails {
         vehicleImageAndLeadFormPanel.setPreferredSize(new Dimension(540, 600));
         vehicleImageAndLeadFormPanel.setMinimumSize(new Dimension(540, 600));
         vehicleImageAndLeadFormPanel.setMaximumSize(new Dimension(540, 600));
+//        vehicleImageAndLeadFormPanel.setBorder(new LineBorder(new Color(0,0,190)));
 
         vehicleImagePanel = new VehicleImagePanel(vehicleImageList).imagePanel();
 
@@ -193,15 +204,23 @@ public class ViewVehicleDetails {
         requestLeadFormPanel.setPreferredSize(new Dimension(540, 100));
         requestLeadFormPanel.setMinimumSize(new Dimension(540, 100));
         requestLeadFormPanel.setMaximumSize(new Dimension(540, 100));
+        requestLeadFormPanel.setBorder(new LineBorder(Color.black));
 
         leadFormButton = new JButton();
-        leadFormButton.setText("Lead Form");
-        leadFormButton.setPreferredSize(new Dimension(100, 20));
-        leadFormButton.setMaximumSize(new Dimension(100, 20));
-        leadFormButton.setMinimumSize(new Dimension(100, 20));
+        leadFormButton.setText("Request Lead Form");
+        leadFormButton.setFont(new Font(Font.SERIF, Font.PLAIN, 16));
+        leadFormButton.setBorder(new BevelBorder(0));
+        leadFormButton.setPreferredSize(new Dimension(200, 30));
+        leadFormButton.setMaximumSize(new Dimension(200, 30));
+        leadFormButton.setMinimumSize(new Dimension(200, 30));
+        leadFormButton.setBackground(new Color(185,185,185));
+        leadFormButton.setFocusPainted(false);
+
         requestLeadFormPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
         leadFormButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        requestLeadFormPanel.add(leadFormButton, 0);
+        requestLeadFormPanel.add(Box.createRigidArea(new Dimension( 170, 100)));
+        requestLeadFormPanel.add(leadFormButton);
+        requestLeadFormPanel.add(Box.createRigidArea(new Dimension(170, 100)));
 
         vehicleImageAndLeadFormPanel.add(vehicleImagePanel, 0);
         vehicleImageAndLeadFormPanel.add(requestLeadFormPanel, 1);
@@ -212,10 +231,10 @@ public class ViewVehicleDetails {
         vehicleInfoPanel = new JPanel();
         vehicleInfoPanel.setLayout(new BoxLayout(vehicleInfoPanel, BoxLayout.Y_AXIS));
 
-//        vehicleInfoBoxLayoutPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
-        vehicleInfoPanel.setPreferredSize(new Dimension(370, 600));
-        vehicleInfoPanel.setMaximumSize(new Dimension(370, 600));
-        vehicleInfoPanel.setMaximumSize(new Dimension(370, 600));
+        vehicleInfoPanel.setBorder(new LineBorder(Color.BLACK));
+        vehicleInfoPanel.setPreferredSize(new Dimension(376, 600));
+        vehicleInfoPanel.setMaximumSize(new Dimension(376, 600));
+        vehicleInfoPanel.setMaximumSize(new Dimension(376, 600));
 
         vehicleInfoLabelPanel = new JPanel();
         vehicleInfoLabelPanel.setLayout(new BoxLayout(vehicleInfoLabelPanel, BoxLayout.X_AXIS));
@@ -563,7 +582,7 @@ public class ViewVehicleDetails {
         vehicleDescriptionPanel.setPreferredSize(new Dimension(916, 140));
 
         vehicleDescriptionPanel.setBackground(new Color(187, 187, 187));
-        vehicleDescriptionPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
+        vehicleDescriptionPanel.setBorder(new LineBorder(Color.BLACK));
 
         vehicleDescriptionLabel = new JLabel();
         vehicleDescriptionLabel.setText("Vehicle Description");
@@ -609,6 +628,14 @@ public class ViewVehicleDetails {
         dealersInformationLabel = new JLabel();
         dealersInformationLabel.setText("Dealership Information");
 
+        dealersInformationPane = new JScrollPane();
+        dealersInformationPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        dealersInformationPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+        dealersInformationPane.setMaximumSize(new Dimension(916, 60));
+        dealersInformationPane.setMinimumSize(new Dimension(916, 60));
+        dealersInformationPane.setPreferredSize(new Dimension(916, 60));
+        dealersInformationPane.setBackground(new Color(187, 187, 187));
+
         dealersInformationTextArea = new JTextArea();
         dealersInformationTextArea.setMaximumSize(new Dimension(916, 60));
         dealersInformationTextArea.setMinimumSize(new Dimension(916, 60));
@@ -617,7 +644,9 @@ public class ViewVehicleDetails {
 //        dealersInformationTextArea.setBorder(new LineBorder(new Color(187, 187, 187)));
         dealersInformationTextArea.setText(myCar.getDealersInformation());
 
+        dealersInformationPane.setViewportView(dealersInformationTextArea);
+
         dealersInformationPanel.add(dealersInformationLabel, 0);
-        dealersInformationPanel.add(dealersInformationTextArea, 1);
+        dealersInformationPanel.add(dealersInformationPane, 1);
     }
 }
