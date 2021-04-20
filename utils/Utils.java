@@ -73,6 +73,13 @@ public class Utils {
         final String[] arr = urls.split(",");
         car.setImages(Arrays.asList(arr));
 
+        car.setDealersInformation(map.get("DealerName") + "\n" +
+        map.get("DealerAddress") + "\n" +
+                map.get("City") + "\n" +
+                map.get("State") + "\n" +
+        map.get("Country"));
+
+
 
         return car;
     }

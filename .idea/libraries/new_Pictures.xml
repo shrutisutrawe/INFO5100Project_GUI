@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="new_Pictures">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/new_Pictures.zip!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/INFO5100Project_GUI/new_Pictures.zip!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
