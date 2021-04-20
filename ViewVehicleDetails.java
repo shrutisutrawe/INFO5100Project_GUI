@@ -1,5 +1,3 @@
-package GUI_SelfPractice;
-
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EtchedBorder;
@@ -27,42 +25,12 @@ public class ViewVehicleDetails {
     private JPanel vehicleImagePanel;
     private JButton leadFormButton;
     private JLabel vehicleInfoLabel;
-    private JLabel carConditionImageLabel;
-    private JLabel carConditionDataLabel;
-    private JLabel engineImageLabel;
-    private JLabel engineDataLabel;
-    private JLabel transmissionDataLabel;
-    private JLabel transmissionImageLabel;
-    private JLabel VINImageLabel;
-    private JLabel VINDataLabel;
-    private JLabel fuelImageLabel;
-    private JLabel fuelDataLabel;
-    private JLabel colorImageLabel;
-    private JLabel colorDataLabel;
-    private JLabel stockNumberImageLabel;
-    private JLabel stockNumberDataLabel;
-    private JLabel seatCountImageLabel;
-    private JLabel seatCountDataLabel;
-    private JLabel ratingsImageLabel;
-    private JLabel ratingDataLabel;
     private JLabel vehicleDescriptionLabel;
     private JLabel dealersInformationLabel;
     private JTextArea vehicleDescriptionTextArea;
     private JTextArea dealersInformationTextArea;
-    private JLabel mileageImageLabel;
-    private JLabel mileageDataLabel;
     private JLabel vehicleNameLabel;
     private JScrollPane scrollPane;
-    private JLabel carConditionIconLabel;
-    private JLabel mileageIconLabel;
-    private JLabel engineIconLabel;
-    private JLabel transmissionIconLabel;
-    private JLabel vinIconLabel;
-    private JLabel fuelIconLabel;
-    private JLabel colorIconLabel;
-    private JLabel stockNumberIconLabel;
-    private JLabel seatCountIconLabel;
-    private JLabel ratingsIconLabel;
     private JTextField vehicleNameTextField;
     private JTextField vehicleMSRPTextField;
     private Dimension iconLabelDimension = new Dimension(60, 50);
@@ -93,14 +61,12 @@ public class ViewVehicleDetails {
     private JPanel vehicleRatingsLabelPanel;
     private JFrame frame;
 
-
     public ViewVehicleDetails(Car myCar) {
         vehicleImageList = new ArrayList<>();
-        vehicleImageList.add("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\CarImages\\img1.jpg");
-        vehicleImageList.add("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\CarImages\\img2.jpg");
-        vehicleImageList.add("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\CarImages\\img3.jpg");
-        vehicleImageList.add("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\CarImages\\img4.jpg");
-
+        vehicleImageList.add("TestImages/img1.jpg");
+        vehicleImageList.add("TestImages/img2.jpg");
+        vehicleImageList.add("TestImages/img3.jpg");
+        vehicleImageList.add("TestImages/img4.jpg");
 
         createVehicleShortDescriptionPanel(myCar);
         createVehicleDetailsPanel(myCar);
@@ -198,7 +164,6 @@ public class ViewVehicleDetails {
 //        vehicleImageAndLeadFormPanel.setBorder(new LineBorder(new Color(0,0,190)));
 
         vehicleImagePanel = new VehicleImagePanel(vehicleImageList).imagePanel();
-
         requestLeadFormPanel = new JPanel();
         requestLeadFormPanel.setLayout(new BoxLayout(requestLeadFormPanel, BoxLayout.X_AXIS));
         requestLeadFormPanel.setPreferredSize(new Dimension(540, 100));
@@ -237,327 +202,39 @@ public class ViewVehicleDetails {
         vehicleInfoPanel.setMaximumSize(new Dimension(376, 600));
 
         vehicleInfoLabelPanel = new JPanel();
-        vehicleInfoLabelPanel.setLayout(new BoxLayout(vehicleInfoLabelPanel, BoxLayout.X_AXIS));
+        vehicleInfoLabelPanel.setLayout(new BoxLayout(vehicleInfoLabelPanel, BoxLayout.Y_AXIS));
         vehicleInfoLabelPanel.setPreferredSize(labelPanelDimension);
         vehicleInfoLabelPanel.setMaximumSize(labelPanelDimension);
         vehicleInfoLabelPanel.setMinimumSize(labelPanelDimension);
+
         vehicleInfoLabel = new JLabel();
         vehicleInfoLabel.setFont(new Font("Calibri",Font.BOLD,24));
         vehicleInfoLabel.setText("Vehicle Info");
+        vehicleInfoLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        vehicleInfoLabelPanel.add(vehicleInfoLabel, 0);
+        vehicleInfoLabelPanel.add(vehicleInfoLabel,0);
 
-         carImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\carcondition.jpg");
-         engineImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\CarEngine.jpg");
-         transmissionImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\Transmission.jpg");
-         vinImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\VIN.jpg");
-         fuelImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\Fuel.jpg");
-         exteriorColorImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\CarColor.jpg");
-         stockNumberImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\vehicleid.jpg");
-         mileageImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\Mileage.jpg");
-         seatCountImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\carseat.jpg");
-         ratingsImage = new ImageIcon("C:\\Users\\Shruti\\Desktop\\NEU\\INFO_5100_AED_2021\\Project\\Pictures\\new_Pictures\\Ratings.jpg");
+        carImage = new ImageIcon("Icons/carcondition.jpg");
+        engineImage = new ImageIcon("Icons/CarEngine.jpg");
+        transmissionImage = new ImageIcon("Icons/Transmission.jpg");
+        vinImage = new ImageIcon("Icons/VIN.jpg");
+        fuelImage = new ImageIcon("Icons/Fuel.jpg");
+        exteriorColorImage = new ImageIcon("Icons/CarColor.jpg");
+        stockNumberImage = new ImageIcon("Icons/vehicleid.jpg");
+        mileageImage = new ImageIcon("Icons/Mileage.jpg");
+        seatCountImage = new ImageIcon("Icons/carseat.jpg");
+        ratingsImage = new ImageIcon("Icons/Ratings.jpg");
 
-
-        //vehicleConditionLabelPanel starts here
-        vehicleConditionLabelPanel = new JPanel();
-        vehicleConditionLabelPanel.setLayout(new BoxLayout(vehicleConditionLabelPanel, BoxLayout.X_AXIS));
-        vehicleConditionLabelPanel.setPreferredSize(labelPanelDimension);
-        vehicleConditionLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleConditionLabelPanel.setMaximumSize(labelPanelDimension);
-
-        carConditionIconLabel = new JLabel();
-        carConditionIconLabel.setIcon(carImage);
-        carConditionIconLabel.setPreferredSize(iconLabelDimension);
-        carConditionIconLabel.setMaximumSize(iconLabelDimension);
-        carConditionIconLabel.setMinimumSize(iconLabelDimension);
-
-        carConditionDataLabel = new JLabel();
-        carConditionDataLabel.setText(myCar.getCarCategory());
-        carConditionDataLabel.setPreferredSize(dataLabelDimension);
-        carConditionDataLabel.setMinimumSize(dataLabelDimension);
-        carConditionDataLabel.setMinimumSize(dataLabelDimension);
-
-        carConditionImageLabel = new JLabel();
-        carConditionImageLabel.setText("Car Condition");
-        carConditionImageLabel.setPreferredSize(imageLabelDimension);
-        carConditionImageLabel.setMaximumSize(imageLabelDimension);
-        carConditionImageLabel.setMinimumSize(imageLabelDimension);
-
-        vehicleConditionLabelPanel.add(carConditionIconLabel, 0);
-        vehicleConditionLabelPanel.add(carConditionImageLabel, 1);
-        vehicleConditionLabelPanel.add(carConditionDataLabel, 2);
-        //vehicleConditionLabelPanel ends here
-
-        //vehicleEngineLabelPanel starts here
-        vehicleEngineLabelPanel = new JPanel();
-        vehicleEngineLabelPanel.setLayout(new BoxLayout(vehicleEngineLabelPanel, BoxLayout.X_AXIS));
-        vehicleEngineLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleEngineLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleEngineLabelPanel.setPreferredSize(labelPanelDimension);
-
-        engineIconLabel = new JLabel();
-        engineIconLabel.setIcon(engineImage);
-        engineIconLabel.setPreferredSize(iconLabelDimension);
-        engineIconLabel.setMaximumSize(iconLabelDimension);
-        engineIconLabel.setMinimumSize(iconLabelDimension);
-
-        engineDataLabel = new JLabel();
-        engineDataLabel.setText(myCar.getEngine());
-        engineDataLabel.setPreferredSize(dataLabelDimension);
-        engineDataLabel.setMinimumSize(dataLabelDimension);
-        engineDataLabel.setMinimumSize(dataLabelDimension);
-
-        engineImageLabel = new JLabel();
-        engineImageLabel.setText("Engine");
-        engineImageLabel.setPreferredSize(imageLabelDimension);
-        engineImageLabel.setMaximumSize(imageLabelDimension);
-        engineImageLabel.setMinimumSize(imageLabelDimension);
-
-        vehicleEngineLabelPanel.add(engineIconLabel, 0);
-        vehicleEngineLabelPanel.add(engineImageLabel, 1);
-        vehicleEngineLabelPanel.add(engineDataLabel, 2);
-        //vehicleEngineLabelPanel ends here
-
-        vehicleTransmissionLabelPanel = new JPanel();
-        vehicleTransmissionLabelPanel.setLayout(new BoxLayout(vehicleTransmissionLabelPanel, BoxLayout.X_AXIS));
-        vehicleTransmissionLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleTransmissionLabelPanel.setPreferredSize(labelPanelDimension);
-        vehicleTransmissionLabelPanel.setMinimumSize(labelPanelDimension);
-
-        transmissionIconLabel = new JLabel();
-        transmissionIconLabel.setIcon(transmissionImage);
-        transmissionIconLabel.setPreferredSize(iconLabelDimension);
-        transmissionIconLabel.setMaximumSize(iconLabelDimension);
-        transmissionIconLabel.setMinimumSize(iconLabelDimension);
-
-        transmissionImageLabel = new JLabel();
-        transmissionImageLabel.setText("Transmission");
-        transmissionImageLabel.setPreferredSize(imageLabelDimension);
-        transmissionImageLabel.setMaximumSize(imageLabelDimension);
-        transmissionImageLabel.setMinimumSize(imageLabelDimension);
-
-        transmissionDataLabel = new JLabel();
-        transmissionDataLabel.setText(myCar.getTransmission());
-        transmissionDataLabel.setPreferredSize(dataLabelDimension);
-        transmissionDataLabel.setMinimumSize(dataLabelDimension);
-        transmissionDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleTransmissionLabelPanel.add(transmissionIconLabel, 0);
-        vehicleTransmissionLabelPanel.add(transmissionImageLabel, 1);
-        vehicleTransmissionLabelPanel.add(transmissionDataLabel, 2);
-
-        //vehicleVINLabelPanel starts here
-        vehicleVINLabelPanel = new JPanel();
-        vehicleVINLabelPanel.setLayout(new BoxLayout(vehicleVINLabelPanel, BoxLayout.X_AXIS));
-        vehicleVINLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleVINLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleVINLabelPanel.setPreferredSize(labelPanelDimension);
-
-        vinIconLabel = new JLabel();
-        vinIconLabel.setIcon(vinImage);
-        vinIconLabel.setPreferredSize(iconLabelDimension);
-        vinIconLabel.setMaximumSize(iconLabelDimension);
-        vinIconLabel.setMinimumSize(iconLabelDimension);
-
-        VINImageLabel = new JLabel();
-        VINImageLabel.setText("VIN");
-        VINImageLabel.setPreferredSize(imageLabelDimension);
-        VINImageLabel.setMaximumSize(imageLabelDimension);
-        VINImageLabel.setMinimumSize(imageLabelDimension);
-
-        VINDataLabel = new JLabel();
-        VINDataLabel.setText(myCar.getVIN());
-        VINDataLabel.setPreferredSize(dataLabelDimension);
-        VINDataLabel.setMinimumSize(dataLabelDimension);
-        VINDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleVINLabelPanel.add(vinIconLabel, 0);
-        vehicleVINLabelPanel.add(VINImageLabel, 1);
-        vehicleVINLabelPanel.add(VINDataLabel, 2);
-        //vehicleVINLabelPanel ends here
-
-        //vehicleFuelLabelPanel starts here
-        vehicleFuelLabelPanel = new JPanel();
-        vehicleFuelLabelPanel.setLayout(new BoxLayout(vehicleFuelLabelPanel, BoxLayout.X_AXIS));
-        vehicleFuelLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleFuelLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleFuelLabelPanel.setPreferredSize(labelPanelDimension);
-//        vehicleFuelLabelPanel.add(Box.createRigidArea(labelPanelDimension));
-
-//        fuelIconLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        fuelIconLabel = new JLabel();
-        fuelIconLabel.setIcon(fuelImage);
-        fuelIconLabel.setPreferredSize(iconLabelDimension);
-        fuelIconLabel.setMaximumSize(iconLabelDimension);
-        fuelIconLabel.setMinimumSize(iconLabelDimension);
-
-        fuelImageLabel = new JLabel();
-        fuelImageLabel.setText("Fuel");
-        fuelImageLabel.setPreferredSize(imageLabelDimension);
-        fuelImageLabel.setMaximumSize(imageLabelDimension);
-        fuelImageLabel.setMinimumSize(imageLabelDimension);
-
-        fuelDataLabel = new JLabel();
-        fuelDataLabel.setText(myCar.getFuel());
-        fuelDataLabel.setPreferredSize(dataLabelDimension);
-        fuelDataLabel.setMinimumSize(dataLabelDimension);
-        fuelDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleFuelLabelPanel.add(fuelIconLabel, 0);
-        vehicleFuelLabelPanel.add(fuelImageLabel, 1);
-        vehicleFuelLabelPanel.add(fuelDataLabel, 2);
-        //vehicleFuelLabelPanel ends here
-
-        //vehicleColorLabelPanel starts here
-        vehicleColorLabelPanel = new JPanel();
-        vehicleColorLabelPanel.setLayout(new BoxLayout(vehicleColorLabelPanel, BoxLayout.X_AXIS));
-        vehicleColorLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleColorLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleColorLabelPanel.setPreferredSize(labelPanelDimension);
-
-        colorIconLabel = new JLabel();
-        colorIconLabel.setIcon(exteriorColorImage);
-        colorIconLabel.setPreferredSize(iconLabelDimension);
-        colorIconLabel.setMaximumSize(iconLabelDimension);
-        colorIconLabel.setMinimumSize(iconLabelDimension);
-
-        colorImageLabel = new JLabel();
-        colorImageLabel.setText("Color");
-        colorImageLabel.setPreferredSize(imageLabelDimension);
-        colorImageLabel.setMaximumSize(imageLabelDimension);
-        colorImageLabel.setMinimumSize(imageLabelDimension);
-
-        colorDataLabel = new JLabel();
-        colorDataLabel.setText(myCar.getExteriorColor());
-        colorDataLabel.setPreferredSize(dataLabelDimension);
-        colorDataLabel.setMinimumSize(dataLabelDimension);
-        colorDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleColorLabelPanel.add(colorIconLabel, 0);
-        vehicleColorLabelPanel.add(colorImageLabel, 1);
-        vehicleColorLabelPanel.add(colorDataLabel, 2);
-        //vehicleColorLabelPanel ends here
-
-        //vehicleStockNumberLabelPanel starts here
-        vehicleStockNumberLabelPanel = new JPanel();
-        vehicleStockNumberLabelPanel.setLayout(new BoxLayout(vehicleStockNumberLabelPanel, BoxLayout.X_AXIS));
-        vehicleStockNumberLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleStockNumberLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleStockNumberLabelPanel.setPreferredSize(labelPanelDimension);
-
-        stockNumberIconLabel = new JLabel();
-        stockNumberIconLabel.setIcon(stockNumberImage);
-        stockNumberIconLabel.setPreferredSize(iconLabelDimension);
-        stockNumberIconLabel.setMaximumSize(iconLabelDimension);
-        stockNumberIconLabel.setMinimumSize(iconLabelDimension);
-
-        stockNumberImageLabel = new JLabel();
-        stockNumberImageLabel.setText("Stock #");
-        stockNumberImageLabel.setPreferredSize(imageLabelDimension);
-        stockNumberImageLabel.setMaximumSize(imageLabelDimension);
-        stockNumberImageLabel.setMinimumSize(imageLabelDimension);
-
-        stockNumberDataLabel = new JLabel();
-        stockNumberDataLabel.setText(Integer.toString(myCar.getStockNumber()));
-        stockNumberDataLabel.setPreferredSize(dataLabelDimension);
-        stockNumberDataLabel.setMinimumSize(dataLabelDimension);
-        stockNumberDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleStockNumberLabelPanel.add(stockNumberIconLabel, 0);
-        vehicleStockNumberLabelPanel.add(stockNumberImageLabel, 1);
-        vehicleStockNumberLabelPanel.add(stockNumberDataLabel, 2);
-        //vehicleStockNumberLabelPanel ends here
-
-        //vehicleMileageLabelPanel starts here
-        vehicleMileageLabelPanel = new JPanel();
-        vehicleMileageLabelPanel.setLayout(new BoxLayout(vehicleMileageLabelPanel, BoxLayout.X_AXIS));
-        vehicleMileageLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleMileageLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleMileageLabelPanel.setPreferredSize(labelPanelDimension);
-
-        mileageIconLabel = new JLabel();
-        mileageIconLabel.setIcon(mileageImage);
-        mileageIconLabel.setPreferredSize(iconLabelDimension);
-        mileageIconLabel.setMaximumSize(iconLabelDimension);
-        mileageIconLabel.setMinimumSize(iconLabelDimension);
-
-        mileageImageLabel = new JLabel();
-        mileageImageLabel.setText("Mileage");
-        mileageImageLabel.setPreferredSize(imageLabelDimension);
-        mileageImageLabel.setMaximumSize(imageLabelDimension);
-        mileageImageLabel.setMinimumSize(imageLabelDimension);
-
-        mileageDataLabel = new JLabel();
-        mileageDataLabel.setText(Integer.toString(myCar.getMileage()));
-        mileageDataLabel.setPreferredSize(dataLabelDimension);
-        mileageDataLabel.setMinimumSize(dataLabelDimension);
-        mileageDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleMileageLabelPanel.add(mileageIconLabel, 0);
-        vehicleMileageLabelPanel.add(mileageImageLabel, 1);
-        vehicleMileageLabelPanel.add(mileageDataLabel, 2);
-        //vehicleMileageLabelPanel ends here
-
-        //vehicleSeatCountLabelPanel starts here
-        vehicleSeatCountLabelPanel = new JPanel();
-        vehicleSeatCountLabelPanel.setLayout(new BoxLayout(vehicleSeatCountLabelPanel, BoxLayout.X_AXIS));
-        vehicleSeatCountLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleSeatCountLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleSeatCountLabelPanel.setPreferredSize(labelPanelDimension);
-
-        seatCountIconLabel = new JLabel();
-        seatCountIconLabel.setIcon(seatCountImage);
-        seatCountIconLabel.setPreferredSize(iconLabelDimension);
-        seatCountIconLabel.setMaximumSize(iconLabelDimension);
-        seatCountIconLabel.setMinimumSize(iconLabelDimension);
-
-        seatCountImageLabel = new JLabel();
-        seatCountImageLabel.setText("No of Seats");
-        seatCountImageLabel.setPreferredSize(imageLabelDimension);
-        seatCountImageLabel.setMaximumSize(imageLabelDimension);
-        seatCountImageLabel.setMinimumSize(imageLabelDimension);
-
-        seatCountDataLabel = new JLabel();
-        seatCountDataLabel.setText(Integer.toString(myCar.getSeatCount()));
-        seatCountDataLabel.setPreferredSize(dataLabelDimension);
-        seatCountDataLabel.setMinimumSize(dataLabelDimension);
-        seatCountDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleSeatCountLabelPanel.add(seatCountIconLabel, 0);
-        vehicleSeatCountLabelPanel.add(seatCountImageLabel, 1);
-        vehicleSeatCountLabelPanel.add(seatCountDataLabel, 2);
-        //vehicleSeatCountLabelPanel ends here
-
-        //vehicleRatingsLabelPanel starts here
-        vehicleRatingsLabelPanel = new JPanel();
-        vehicleRatingsLabelPanel.setLayout(new BoxLayout(vehicleRatingsLabelPanel, BoxLayout.X_AXIS));
-        vehicleRatingsLabelPanel.setMinimumSize(labelPanelDimension);
-        vehicleRatingsLabelPanel.setMaximumSize(labelPanelDimension);
-        vehicleRatingsLabelPanel.setPreferredSize(labelPanelDimension);
-
-        ratingsIconLabel = new JLabel();
-        ratingsIconLabel.setIcon(ratingsImage);
-        ratingsIconLabel.setPreferredSize(iconLabelDimension);
-        ratingsIconLabel.setMaximumSize(iconLabelDimension);
-        ratingsIconLabel.setMinimumSize(iconLabelDimension);
-
-        ratingsImageLabel = new JLabel();
-        ratingsImageLabel.setText("Ratings");
-        ratingsImageLabel.setPreferredSize(imageLabelDimension);
-        ratingsImageLabel.setMaximumSize(imageLabelDimension);
-        ratingsImageLabel.setMinimumSize(imageLabelDimension);
-
-        ratingDataLabel = new JLabel();
-        ratingDataLabel.setText(Integer.toString(myCar.getRatings()));
-        ratingDataLabel.setPreferredSize(dataLabelDimension);
-        ratingDataLabel.setMinimumSize(dataLabelDimension);
-        ratingDataLabel.setMinimumSize(dataLabelDimension);
-
-        vehicleRatingsLabelPanel.add(ratingsIconLabel, 0);
-        vehicleRatingsLabelPanel.add(ratingsImageLabel, 1);
-        vehicleRatingsLabelPanel.add(ratingDataLabel, 2);
-        //vehicleRatingsLabelPanel ends here
+        vehicleConditionLabelPanel = vehicleSubInfoPanel(carImage, "Car Condition", myCar.getCarCategory());
+        vehicleEngineLabelPanel = vehicleSubInfoPanel(engineImage, "Engine", myCar.getEngine());
+        vehicleTransmissionLabelPanel = vehicleSubInfoPanel(transmissionImage, "Transmission", myCar.getTransmission());
+        vehicleVINLabelPanel = vehicleSubInfoPanel(vinImage, "VIN", myCar.getVIN());
+        vehicleFuelLabelPanel = vehicleSubInfoPanel(fuelImage, "Fuel", myCar.getFuel());
+        vehicleColorLabelPanel = vehicleSubInfoPanel(exteriorColorImage, "Color", myCar.getExteriorColor());
+        vehicleStockNumberLabelPanel = vehicleSubInfoPanel(stockNumberImage, "Stock #", Integer.toString(myCar.getStockNumber()));
+        vehicleMileageLabelPanel = vehicleSubInfoPanel(mileageImage, "Mileage", Integer.toString(myCar.getMileage()));
+        vehicleSeatCountLabelPanel = vehicleSubInfoPanel(seatCountImage, "No of Seats", Integer.toString(myCar.getSeatCount()));
+        vehicleRatingsLabelPanel = vehicleSubInfoPanel(ratingsImage, "Ratings", Integer.toString(myCar.getRatings()));
 
         vehicleInfoPanel.add(vehicleInfoLabelPanel, 0);
         vehicleInfoPanel.add(vehicleConditionLabelPanel, 1);
@@ -571,6 +248,46 @@ public class ViewVehicleDetails {
         vehicleInfoPanel.add(vehicleSeatCountLabelPanel, 9);
         vehicleInfoPanel.add(vehicleRatingsLabelPanel, 10);
         //vehicleInfoBoxLayoutPanel ends here
+    }
+
+    private JPanel vehicleSubInfoPanel(ImageIcon image, String imageText, String dataText){
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
+        panel.setMinimumSize(labelPanelDimension);
+        panel.setMaximumSize(labelPanelDimension);
+        panel.setPreferredSize(labelPanelDimension);
+        panel.add(Box.createRigidArea(new Dimension(5,0)));
+        panel.add(vehicleIconLabel(image));
+        panel.add(vehicleImageLabel(imageText));
+        panel.add(vehicleDataLabel(dataText));
+        return panel;
+    }
+
+    private JLabel vehicleIconLabel(ImageIcon image){
+        JLabel label = new JLabel();
+        label.setIcon(image);
+        label.setPreferredSize(iconLabelDimension);
+        label.setMaximumSize(iconLabelDimension);
+        label.setMinimumSize(iconLabelDimension);
+        return label;
+    }
+
+    private JLabel vehicleDataLabel(String text){
+        JLabel label = new JLabel();
+        label.setText(text);
+        label.setPreferredSize(dataLabelDimension);
+        label.setMinimumSize(dataLabelDimension);
+        label.setMinimumSize(dataLabelDimension);
+        return label;
+    }
+
+    private JLabel vehicleImageLabel(String text){
+        JLabel label = new JLabel();
+        label.setText(text);
+        label.setPreferredSize(imageLabelDimension);
+        label.setMaximumSize(imageLabelDimension);
+        label.setMinimumSize(imageLabelDimension);
+        return label;
     }
 
     public void createVehicleDescriptionPanel(Car myCar) {
@@ -648,5 +365,9 @@ public class ViewVehicleDetails {
 
         dealersInformationPanel.add(dealersInformationLabel, 0);
         dealersInformationPanel.add(dealersInformationPane, 1);
+    }
+
+    public static void main(String[] args){
+        new ViewVehicleDetails(new Car());
     }
 }
