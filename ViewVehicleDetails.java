@@ -1,4 +1,3 @@
-package GUI_SelfPractice;
 
 import vo.Car;
 
@@ -206,7 +205,7 @@ public class ViewVehicleDetails {
         requestLeadFormPanel.add(leadFormButton, 0);
 
         vehicleImageAndLeadFormPanel.add(vehicleImagePanel, 0);
-        vehicleImageAndLeadFormPanel.a
+
         vehicleImageAndLeadFormPanel.add(requestLeadFormPanel, 1);
     }
 
@@ -413,7 +412,7 @@ public class ViewVehicleDetails {
         colorImageLabel.setMinimumSize(imageLabelDimension);
 
         colorDataLabel = new JLabel();
-        colorDataLabel.setText(myCar.getExteriorColor());
+        colorDataLabel.setText(myCar.getColor());
         colorDataLabel.setPreferredSize(dataLabelDimension);
         colorDataLabel.setMinimumSize(dataLabelDimension);
         colorDataLabel.setMinimumSize(dataLabelDimension);
