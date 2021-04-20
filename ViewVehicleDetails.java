@@ -1,5 +1,7 @@
 package GUI_SelfPractice;
 
+import vo.Car;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
