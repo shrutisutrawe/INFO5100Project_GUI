@@ -3,6 +3,7 @@ package utils;
 
 import vo.Car;
 import vo.CarCategory;
+import vo.Dealer;
 
 import javax.sql.rowset.serial.SerialBlob;
 import java.sql.Blob;
@@ -73,15 +74,23 @@ public class Utils {
         final String[] arr = urls.split(",");
         car.setImages(Arrays.asList(arr));
 
-        car.setDealersInformation(map.get("DealerName") + "\n" +
-        map.get("DealerAddress") + "\n" +
-                map.get("City") + "\n" +
-                map.get("State") + "\n" +
-        map.get("Country"));
+
 
 
 
         return car;
+    }
+
+    static public Dealer transToDealer(Map<String, Object> map) {
+        Dealer dealer = new Dealer();
+        dealer.setName(String.valueOf(map.get("DealerName")));
+        dealer.setStreetAddress(String.valueOf(map.get("DealerAddress")));
+        dealer.setCity(String.valueOf(map.get("City")));
+        dealer.setState(String.valueOf(map.get("State")));
+        dealer.setCountry(String.valueOf(map.get("Country")));
+
+
+        return dealer;
     }
 
 

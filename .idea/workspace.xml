@@ -2,37 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3985e3-ae5c-4d00-a1b3-5ed103a0ae3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/new_Pictures.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/INFO5100Project_GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/INFO5100Project_GUI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitialGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/InitialGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vo/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/VehicleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/VehicleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/.idea/libraries/new_Pictures.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/.idea/libraries/new_Pictures.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/Car$CarCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/InitialGUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/LeadFormButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/LeadFormButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/VehicleImagePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/VehicleImagePanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/VehicleImagePanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/VehicleImagePanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/VehicleImagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/VehicleImagePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/ViewVehicleDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/ViewVehicleDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/INFO5100Project_GUI/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vo/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/vo/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vo/DealerVO.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +18,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VehicleDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VehicleDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dao/VehicleDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dealer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vo/Dealer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-677">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewJDBC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/NewJDBC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-124">
+              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base64Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/Base64Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/Demo3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -56,33 +69,42 @@
       <file leaf-file-name="InitialGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InitialGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-181">
+            <state relative-caret-position="-2297">
+              <caret line="17" column="36" selection-end-line="213" selection-end-column="1" />
               <folding>
-                <element signature="e#0#26123#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="initializer##0;class#InitialGUI#0" expanded="true" />
+                <element signature="initializer##0;class#InitialGUI#0" expanded="true" />
+                <element signature="e#25658#25659#0" expanded="true" />
+                <element signature="e#25691#25692#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+            <state relative-caret-position="341">
+              <caret line="94" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="94" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="INFO5100Project_GUI.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INFO5100Project_GUI.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="CarCategory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vo/CarCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vo/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
+            <state relative-caret-position="135">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -96,7 +118,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/vo/Car.java" />
+        <option value="$PROJECT_DIR$/InitialGUI.java" />
+        <option value="$PROJECT_DIR$/vo/Inventory.java" />
+        <option value="$PROJECT_DIR$/vo/Dealer.java" />
         <option value="$PROJECT_DIR$/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/dao/VehicleDAO.java" />
       </list>
     </option>
   </component>
@@ -137,7 +163,37 @@
             <path>
               <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="INFO5100Project_GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INFO5100Project_GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INFO5100Project_GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INFO5100Project_GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INFO5100Project_GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="TestImages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INFO5100Project_GUI" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INFO5100Project_GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="INFO5100Project_GUI" type="b2602c69:ProjectViewProjectNode" />
@@ -161,6 +217,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="vo" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -246,12 +307,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618908141495</updated>
-      <workItem from="1618908144788" duration="570000" />
+      <workItem from="1618908144788" duration="3413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="570000" />
+    <option name="totallyTimeSpent" value="3413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -268,7 +329,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32948717" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32948717" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
@@ -277,7 +338,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -298,7 +359,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/utils/Utils.java</url>
-          <line>30</line>
+          <line>31</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -309,33 +370,90 @@
     <entry file="file://$PROJECT_DIR$/INFO5100Project_GUI.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vo/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InitialGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
+        <state relative-caret-position="-2297">
+          <caret line="17" column="36" selection-end-line="213" selection-end-column="1" />
           <folding>
-            <element signature="e#0#26123#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#InitialGUI#0" expanded="true" />
+            <element signature="initializer##0;class#InitialGUI#0" expanded="true" />
+            <element signature="e#25658#25659#0" expanded="true" />
+            <element signature="e#25691#25692#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Base64Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/Demo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/CarCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/NewJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/DealerVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/Dealer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-677">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/VehicleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="94" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="94" />
         </state>
       </provider>
     </entry>

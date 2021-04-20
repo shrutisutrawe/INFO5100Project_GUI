@@ -13,6 +13,8 @@ import java.util.Map;
 
 import dao.NewJDBC;
 import vo.Car;
+import vo.Dealer;
+
 
 public class VehicleDAO {
 
@@ -28,19 +30,22 @@ public class VehicleDAO {
         }
     }
 
-    public Car getById(int id) throws SQLException {
+    public List<Map<String, Object>> getById(int id) throws SQLException {
         final ResultSet query = newJDBC.query("select * from vehicle_test vt inner join model_test mot on vt.model_id = mot.model_id\n" +
                 "inner join make_test mat on vt.make_id = mat.make_id inner join Dealer d on vt.dealer_id =\n" +
                 "d.DealerId\n" +
                 "where vehicle_id = ?", new String[]{String.valueOf(id)});
         List<Map<String, Object>> res = Utils.resultSetToList(query);
         Car car = Utils.transToCar(res.get(0));
-        return car;
+        return res;
     }
 
     public static void main(String[] args) throws SQLException {
         VehicleDAO vehicleDAO = new VehicleDAO();
-        final Car byId = vehicleDAO.getById(1);
-        System.out.println(byId);
+        final List<Map<String, Object>> res = vehicleDAO.getById(1);
+        Car car = Utils.transToCar(res.get(0));
+        Dealer dealer = Utils.transToDealer(res.get(0));
+        System.out.println(car);
+        System.out.println(dealer);
     }
 }
