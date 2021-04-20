@@ -2,11 +2,8 @@ package utils;
 
 
 import vo.Car;
-import vo.CarCategory;
 import vo.Dealer;
 
-import javax.sql.rowset.serial.SerialBlob;
-import java.sql.Blob;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -54,7 +51,7 @@ public class Utils {
         car.setFuel(String.valueOf(map.get("fuel")));
         car.setVIN(String.valueOf(map.get("vin")));
         if (map.get("stock") != null) {
-            car.setStockNumber(Integer.valueOf(String.valueOf(map.get("stock"))));
+            car.setStockNum(Integer.valueOf(String.valueOf(map.get("stock"))));
         }
         if (map.get("seat_count") != null) {
             car.setSeatCount(Integer.valueOf(String.valueOf(map.get("seat_count"))));
@@ -64,7 +61,7 @@ public class Utils {
         }
 
         if (map.get("rating") != null) {
-            car.setRatings(Integer.valueOf(String.valueOf(map.get("rating"))));
+            car.setRating(Integer.valueOf(String.valueOf(map.get("rating"))));
         }
         if (map.get("description") != null) {
             car.setVehicleDescription(String.valueOf(map.get("description")));

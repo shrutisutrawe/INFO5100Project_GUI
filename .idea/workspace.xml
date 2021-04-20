@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3985e3-ae5c-4d00-a1b3-5ed103a0ae3f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/vo/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/VehicleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/VehicleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewVehicleDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/ViewVehicleDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vo/DealerVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vo/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/vo/Car.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="VehicleDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dao/VehicleDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="386">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="94" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="94" />
+            <state relative-caret-position="1275">
+              <caret line="91" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="91" />
             </state>
           </provider>
         </entry>
@@ -100,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Car.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vo/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="-831">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -117,12 +115,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vo/Car.java" />
         <option value="$PROJECT_DIR$/InitialGUI.java" />
         <option value="$PROJECT_DIR$/vo/Inventory.java" />
         <option value="$PROJECT_DIR$/vo/Dealer.java" />
         <option value="$PROJECT_DIR$/utils/Utils.java" />
         <option value="$PROJECT_DIR$/dao/VehicleDAO.java" />
+        <option value="$PROJECT_DIR$/vo/Car.java" />
       </list>
     </option>
   </component>
@@ -307,12 +305,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618908141495</updated>
-      <workItem from="1618908144788" duration="3413000" />
+      <workItem from="1618908144788" duration="4938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3413000" />
+    <option name="totallyTimeSpent" value="4938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -329,18 +327,18 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32948717" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32948717" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32948717" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,7 +357,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/utils/Utils.java</url>
-          <line>31</line>
+          <line>28</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -426,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vo/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vo/Dealer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-677">
@@ -442,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/VehicleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="386">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -452,8 +443,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="94" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="94" />
+        <state relative-caret-position="1275">
+          <caret line="91" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vo/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-831">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
     </entry>

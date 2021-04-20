@@ -3,13 +3,9 @@ import vo.Car;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
-import javax.swing.border.TitledBorder;
-import javax.swing.plaf.FontUIResource;
-import javax.swing.text.StyleContext;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class ViewVehicleDetails {
     private JFrame frame = new JFrame();
@@ -442,7 +438,7 @@ public class ViewVehicleDetails {
         stockNumberImageLabel.setMinimumSize(imageLabelDimension);
 
         stockNumberDataLabel = new JLabel();
-        stockNumberDataLabel.setText(Integer.toString(myCar.getStockNumber()));
+        stockNumberDataLabel.setText(Integer.toString(myCar.getStockNum()));
         stockNumberDataLabel.setPreferredSize(dataLabelDimension);
         stockNumberDataLabel.setMinimumSize(dataLabelDimension);
         stockNumberDataLabel.setMinimumSize(dataLabelDimension);
@@ -532,7 +528,7 @@ public class ViewVehicleDetails {
         ratingsImageLabel.setMinimumSize(imageLabelDimension);
 
         ratingDataLabel = new JLabel();
-        ratingDataLabel.setText(Integer.toString(myCar.getRatings()));
+        ratingDataLabel.setText(Integer.toString(myCar.getRating()));
         ratingDataLabel.setPreferredSize(dataLabelDimension);
         ratingDataLabel.setMinimumSize(dataLabelDimension);
         ratingDataLabel.setMinimumSize(dataLabelDimension);
@@ -617,7 +613,7 @@ public class ViewVehicleDetails {
         dealersInformationTextArea.setPreferredSize(new Dimension(916, 60));
         dealersInformationTextArea.setBackground(new Color(238, 238, 238));
 //        dealersInformationTextArea.setBorder(new LineBorder(new Color(187, 187, 187)));
-        dealersInformationTextArea.setText(myCar.getDealersInformation());
+
 
         dealersInformationPanel.add(dealersInformationLabel, 0);
         dealersInformationPanel.add(dealersInformationTextArea, 1);

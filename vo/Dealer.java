@@ -120,4 +120,20 @@ public class Dealer {
 
     /*******************  METHODS  *******************/
 
+    @Override
+    public String toString() {
+        return "Dealer{" +
+                "dealerID='" + dealerID + '\'' +
+                ", name='" + name + '\'' +
+                ", streetAddress='" + streetAddress + '\'' +
+                ", city='" + city + '\'' +
+                ", stateID='" + stateID + '\'' +
+                ", state='" + state + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", country='" + country + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                '}';
+    }
 }
