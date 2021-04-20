@@ -1,5 +1,4 @@
 //package group8.Main;
-package GUI_SelfPractice;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

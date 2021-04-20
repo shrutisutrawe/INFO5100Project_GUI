@@ -1,25 +1,23 @@
-package GUI_SelfPractice;
-
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 import java.util.List;
 
 public class VehicleImagePanel {
     private JLabel imageLabel;
-    private JButton incButton;
-    private JButton decButton;
+    private JButton rightButton;
+    private JButton leftButton;
     private List<String> imageList;
     private int index = 0;
 
+    VehicleImagePanel(){}
+
     VehicleImagePanel(List<String> images) {
         this.imageList = images;
-        incButton = getIncButton();
-        decButton = getDecButton();
+        rightButton = getRightButton();
+        leftButton = getLeftButton();
         imageLabel = new JLabel();
         imageLabel.setPreferredSize(new Dimension(480,500));
         imageLabel.setMinimumSize(new Dimension(480,500));
@@ -32,12 +30,12 @@ public class VehicleImagePanel {
         imageLabel.setIcon(getImageByIndex(index));
 //        imageLabel.setBorder(new EmptyBorder(10, 10, 20, 10));
         panel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        if (decButton != null)
-            panel.add(decButton);
+        if (leftButton != null)
+            panel.add(leftButton);
         panel.add(imageLabel);
-        if (incButton != null)
-            panel.add(incButton);
-        //panel.setBackground(Color.white);
+        if (rightButton != null)
+            panel.add(rightButton);
+//        panel.setBackground(Color.white);
 //        panel.setBorder(new EmptyBorder(10, 10, 10, 10));
         panel.setPreferredSize(new Dimension(540, 500));
         panel.setMinimumSize(new Dimension(540, 500));
@@ -45,19 +43,14 @@ public class VehicleImagePanel {
         return panel;
     }
 
-    public JButton getDecButton() {
+    public JButton getLeftButton() {
         if (imageList == null || imageList.size() <= 1) {
-            return null;
+            return getButton();
         }
-        decButton = getButton();
-        decButton.setText("<");
-        decButton.setBorder(new LineBorder(new Color(255,255,255)));
+        leftButton = getButton();
+        leftButton.setText("<");
 
-        decButton.setPreferredSize(new Dimension(30,500));
-        decButton.setMinimumSize(new Dimension(30,500));
-        decButton.setMaximumSize(new Dimension(30,500));
-
-        decButton.addActionListener(new ActionListener() {
+        leftButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (index == 0)
@@ -66,22 +59,17 @@ public class VehicleImagePanel {
                 imageLabel.setIcon(getImageByIndex(index));
             }
         });
-        return decButton;
+        return leftButton;
     }
 
-    public JButton getIncButton() {
+    public JButton getRightButton() {
         if (imageList == null || imageList.size() <= 1) {
-            return null;
+            return getButton();
         }
-        incButton = getButton();
-        incButton.setText(">");
-        incButton.setBorder(new LineBorder(new Color(255,255,255)));
+        rightButton = getButton();
+        rightButton.setText(">");
 
-        incButton.setPreferredSize(new Dimension(25,500));
-        incButton.setMinimumSize(new Dimension(25,500));
-        incButton.setMaximumSize(new Dimension(25,500));
-
-        incButton.addActionListener(new ActionListener() {
+        rightButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (index == imageList.size() - 1)
@@ -90,7 +78,7 @@ public class VehicleImagePanel {
                 imageLabel.setIcon(getImageByIndex(index));
             }
         });
-        return incButton;
+        return rightButton;
     }
 
     public JButton getButton() {
@@ -99,6 +87,10 @@ public class VehicleImagePanel {
         button.setContentAreaFilled(false);
         button.setFocusPainted(false);
         button.setBorderPainted(false);
+        button.setPreferredSize(new Dimension(25,500));
+        button.setMinimumSize(new Dimension(25,500));
+        button.setMaximumSize(new Dimension(25,500));
+        button.setBorder(new LineBorder(new Color(255,255,255)));
         button.setFont(newButtonFont);
         return button;
     }
